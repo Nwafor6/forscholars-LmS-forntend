@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+.navbar-light .navbar-brand {
+    color: white;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #063547;
+  color: white
+
+}
+/*nav*/
+.fa-bars, .fa-times{
+  font-size: 20px;
+}
+.fa-times{display: none;}
+.navbar-brand{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+.logo-left{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+
+}
+.menu-logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu-logo a:hover{
+  color: white;
+}
+.logo-right ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+}
+.logo-right li{
+  display: block;
+  padding: 5px;
+}
+.logo-right a,fa{
+  color: white;
+  font-size: 20px;
+}
+/*mainbody*/
+.main-body{
+ /* display: grid;
+  grid-template-columns:0.5fr 2fr;*/
+  display: flex;
+}
+.side-nav{
+  height: 100vh;
+  text-align: center;
+  width: 100px;
+}
+.side-nav li{
+  display: block;
+  padding: 4px;
+}
+.side-nav li a{
+  color: black;
+}
+.body-content{
+ /* display: flex;
+  flex-flow: row wrap;*/
+  width: 100%;
+}
+.ldashboard-body{
+  padding: 30px;
+  background-color: white;
+}
+.row small{
+  color: grey;
+}
+.row h6{
+  color: blue;
+  font-weight: bold;
+
+}
+.lprofile-img{
+  text-align: center;
+}
+.lprofile-img  img{
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+/*dashboard*/
+.page-info{
+  display: flex;
+  justify-content: space-between;
+}
+.stages{
+  padding: 30px;
+  background-color: white;
+  margin-bottom:10px ;
+  text-align: center;
+}
+
+/*post detail style*/
+.post-comment{
+  /*outline: 1px solid black;*/
+  padding: 15px;
+}
+.comment-messages img{
+  border-radius: 100%;
+}
+
+/*announcement*/
+.announcement-list{
+    outline: 1px solid black;
+    padding: 15px;
+}
+
+/*all-courses*/
+.item {
+  
+}
+
+.item img{
+  width: 200px;
+  height: 200px;
+}
+.personal-info{
+ padding: 10px;
+}

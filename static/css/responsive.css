@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+	.side-nav{
+	  height: 100vh;
+	  text-align: center;
+	  display: None;
+	}
+	.main-body {
+    grid-template-columns: 0.5fr 2fr;
+
+}
+
+@media(max-width: 425px){
+	.main-body{
+		grid-template-columns: 0.9fr 2fr;
+	}
+}

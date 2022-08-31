@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <section class="main">
+      <section class="nav-bar">
+        <nav class="navbar navbar-light ">
+          <div class="logo-left">
+            <div class="menu-logo">
+              <i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
+              <a class="navbar-brand" href="#">
+              <img src="../static/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              4Scholars
+            </a>
+            </div>
+          </div>
+          <div class="logo-right">
+            <ul>
+              <li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+              <li>
+                <a href=""><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section> 
+      <section class="main-body">
+        <div class="side-nav shadow-sm">
+          <ul>
+            <li><div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+              <div><a href="dashboard.html">Dashboard</a></div>
+            </li><hr>
+            <li><div><i class="fa fa-users" aria-hidden="true"></i></div>
+              <div><a href="user.html">User</a></div>
+            </li><hr>
+            <li><div><i class="fa fa-tasks" aria-hidden="true"></i></div>
+              <div><a href="">Tasks</a></div>
+            </li><hr>
+            <li><div><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+              <div><a href="post.html">Posts</a></div>
+            </li><hr>
+          
+          </ul>
+        </div>
+        <div class="body-content bg-light">
+ 
+             <div class="heading p-3">
+              <h3>Dashboard</h3>
+              <small>Dashboard: Task</small><br>
+              <small>Tutor: Dr.Sam </small><br>
+             </div>
+             <div class="ldashboard-body shadow-sm m-3">
+               <div class="ldashboard-content  col-sm-12 ">
+                <div class="labout">
+                  <h6 class="text-primary">Research Writting Ethics</h6>
+                  <small>Posted: 5days ago</small><br>
+                </div><hr>
+               <div class="personal-info shadow-sm">
+                  <div class="body">
+                    <p>Your Are welcome to the Research Writting Ethics beginners class. Grab a coffee and sit tight, I have included the links to the materials below. Follow and make sure you complete the task before deadline</p>
+                    <p>Using the lecture note and other materials attached below, you have been task to write a detailed litrature review on the <strong>Niger Delta Basin</strong>. The task is simple. Follow all set rules and  you will be fine.</p>
+                    <p>Create a google account if you dont have one. Upload your document to your drive, then copy the click. Endevour to set the link as <strong>Allow anyone with this link</strong>, else your assignment wont be graded since google will not allow third party access</p>
+                    <p><a href="">Introduction Research Writing</a></p>
+                    <p><a href="">Litrature Review Ethics</a></p>
+                    <p style="color: red;">Once submmited, it cannot be undone. Submit before deadline for 100% marks. The enter Key is also for submission!!!!</p>
+                  </div><hr>
+                  <div class="post-comment ">
+                    <div class="comment-head">
+                      <h6>Submit Link</h6>
+                    </div>
+                    <div class="commment-form">
+                      <form id="taskForm" onSubmit="return confirm('Once submitted, cannot be revered')">
+                        <div class="row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Paste Link" required>
+                          </div>
+                        </div>
+                        <input type="Submit" class="btn btn-sm btn-primary mt-3" id="submitTask">
+                      </form>
+                    </div>
+                  </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </section> 
+    </section>
+
+
+
+
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/bootstrap.min.js.map"></script>
+    <script src="static/js/custom.js"></script>
+   
+  
+  </body>
+</html>
