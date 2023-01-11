@@ -10,10 +10,111 @@
     <link rel="stylesheet" href="../static/icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
 
     <title>Hello, world!</title>
+  <style>
+    /*.spinner {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+
+        position: absolute;
+      top: 48%;
+      left: 48%;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-rotateplane {
+        0% { -webkit-transform: perspective(120px) }
+        50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+        100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+      }
+
+      @keyframes sk-rotateplane {
+        0% { 
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+        } 50% { 
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+        } 100% { 
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }*/
+
+      /*.spinner {
+   position: absolute;
+      top: 48%;
+      left: 48%;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+    
+    .spinner-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ff6347;
+        z-index: 999999;
+        }
+   */
+  </style>
   </head>
   <body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+    <!-- <div class="spinner"></div> -->
+    <div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+    </div>
+<!-- spinner -->
     <section class="main">
       <section class="nav-bar">
         <nav class="navbar navbar-light ">
@@ -40,16 +141,16 @@
         <div class="side-nav shadow-sm">
           <ul>
             <li><div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-              <div><a href="base.html">Dashboard</a></div>
+              <div><a href="../students/ldashboard.html">Dashboard</a></div>
             </li><hr>
             <li><div><i class="fa fa-users" aria-hidden="true"></i></div>
-              <div><a href="">User</a></div>
+              <div><a href="../students/user.html">User</a></div>
             </li><hr>
             <li><div><i class="fa fa-tasks" aria-hidden="true"></i></div>
-              <div><a href="">Tasks</a></div>
+              <div><a href="../students/tasks.html">Tasks</a></div>
             </li><hr>
             <li><div><i class="fa fa-bell-o" aria-hidden="true"></i></div>
-              <div><a href="posts.html">Posts</a></div>
+              <div><a href="../students/posts.html">Posts</a></div>
             </li><hr>
           
           </ul>
@@ -151,8 +252,19 @@
     </section>
 
 
+<!--     <script>
+      $(document).ready(function() {
+      //Preloader
+      preloaderFadeOutTime = 500;
+      function hidePreloader() {
+      var preloader = $('.spinner-wrapper');
+      preloader.fadeOut(preloaderFadeOutTime);
+      }
 
-
+      hidePreloader();
+      });
+  </script>
+ -->
 
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/bootstrap.min.js.map"></script>
